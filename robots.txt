@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/repo-name/sitemap.xml
+Sitemap: https://nourhan-ibrahim-atlam.github.io/Prayer-Times-Project//sitemap.xml
