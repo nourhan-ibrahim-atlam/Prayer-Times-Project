@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+body {
+    font-family: 'Cairo' , sans-serif;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.selection {
+    width: 16vw;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.selection select {
+    width: 100%;
+    color: rgb(41, 132, 201);
+    border: 0;
+    outline: 0;
+    box-shadow: 2px 5px 10px rgb(0,0,0,0.3);
+    font-family: 'Cairo' , sans-serif;
+}
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    filter: blur(2px);
+}
+
+.date-info {
+    background-color: rgb(41, 132, 201);
+    border-radius: 15px;
+}
+
+.prayer-times {
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px rgb(0,0,0,0.3);
+}
+
+section {
+    width: 35%;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 50% ;
+    }
+}

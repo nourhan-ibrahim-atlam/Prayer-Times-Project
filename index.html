@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prayer Times | مواقيت الصلاة</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="موقع يعرض مواقيت الصلاة لجميع المدن بشكل دقيق وسهل الاستخدام">
+    <meta name="keywords" content="مواقيت الصلاة, الصلاة, prayer times, islam, islamic app">
+    <meta name="author" content="Nourhan Ibrahim Atlam">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Prayer Times App">
+    <meta property="og:description" content="اعرف مواقيت الصلاة في مدينتك بسهولة">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/background.jpg">
+
+    <!-- Icon Page -->
+    <link rel="Icon" href="Images/icon.jpg">
+
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Axios Library -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Background Images -->
+    <img 
+    src="Images/background.jpg" 
+    alt="background" 
+    class="background-img">
+
+    <!-- Select City -->
+    <section class="selection" dir="rtl">
+        <select id="select-city">
+            <option value="Riyadh">الرياض</option>
+            <option value="Madinah">المدينة</option>
+            <option value="Jeddah">جدة</option>
+            <option value="Makkah">مكة</option>
+            <option value="Dammam">الدمام</option>
+            <option value="Tabuk">تبوك</option>
+            <option value="Ta'if">الطائف</option>
+
+        </select>
+    </section>
+
+    <!-- Main Content -->
+    <section class="position-absolute top-50 start-50 translate-middle" dir="rtl">
+        <!-- information city and date -->
+        <div class="date-info px-4 py-2 text-white">
+            <div class="d-flex justify-content-between">
+                <p id="hours"></p>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h2 id="city" class="mb-3">الرياض</h2>
+            <span id="date"></span>
+        </div>
+
+        <!-- Prayer Times -->
+        <div class="prayer-times mt-4 bg-white">
+           
+        </div>
+        
+    </section>
+
+    <!-- JS File -->
+    <script src="JS/getTimes.js"></script>
+    <script src="JS/requestPrayers.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
